@@ -1,6 +1,11 @@
 import {
   ArrowDownTrayIcon,
   MapIcon,
+  ClockIcon,
+  PhoneIcon,
+  WrenchIcon,
+  ToolsIcon,
+  TruckIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
