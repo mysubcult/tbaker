@@ -69,18 +69,20 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Евдокимов Владимир.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Я специализируюсь на капитальном ремонте ТНВД ЕР6 (Peugeot, Citroen, Mini, BMW). Если ваш двигатель троит и глохнет, теряет мощность и динамику разгона, выдаёт ошибки Check Engine (например, P0087, P0088, P1336, P2880 и другие), то, к сожалению, ваш ТНВД выходит из строя.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Предлагаю свои услуги: выполнение ремонта с гарантией надёжности и честности, вскрытие насоса, полная диагностика и модернизированный ремонт, послеремонтную обратную связь и гарантии. Ремонт в кратчайшие сроки. Стоимость услуг - 6999 рублей (включая расходные и уплотнительные материалы).
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Дополнительно предоставляю фото и видео материалы стадий ремонта и неисправности ТНВД, возможность продажи готового насоса или обмена на ваш, 100% гарантии. Предлагаю сотрудничество с автосервисами на самых выгодных условиях.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Доставка: сотрудничаю со всеми регионами. Доставка транспортной компанией, почтой (оплачивается отдельно).
       </p>
     </>
   ),
@@ -104,16 +106,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Я специализируюсь на капитальном ремонте ТНВД ЕР6 (Peugeot, Citroen, Mini, BMW). Если ваш двигатель троит и глохнет, теряет мощность и динамику разгона, выдаёт ошибки Check Engine (например, P0087, P0088, P1336, P2880 и другие), то, к сожалению, ваш ТНВД выходит из строя.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Самарская обл., Тольятти, р-н Центральный', Icon: MapIcon},
+    {label: 'Work Schedule', text: 'пн, вт, ср, чт, пт; 09:00‑17:00', Icon: ClockIcon},
+    {label: 'Contact Time', text: 'пн, вт, ср, чт, пт, сб, вс; 11:00‑21:00', Icon: PhoneIcon},
+    {label: 'Category', text: 'Автосервисы для автомобилей', Icon: WrenchIcon},
+    {label: 'Services', text: 'Капитальный ремонт ТНВД', Icon: ToolsIcon},
+    {label: 'Delivery', text: 'Сотрудничаю со всеми регионами', Icon: TruckIcon},
   ],
 };
 
@@ -122,70 +122,83 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Языки',
     skills: [
       {
-        name: 'English',
+        name: 'Русский',
         level: 10,
       },
       {
-        name: 'French',
+        name: 'Английский',
         level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Ремонт автомобилей',
     skills: [
       {
-        name: 'React',
+        name: 'Диагностика',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'Ремонт',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Техническое обслуживание',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Обслуживание клиентов',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Коммуникация',
+        level: 9,
+      },
+      {
+        name: 'Решение проблем',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'Надёжность',
+        level: 9,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Специализированные навыки',
     skills: [
       {
-        name: 'React Native',
+        name: 'Ремонт ТНВД',
+        level: 10,
+      },
+      {
+        name: 'Работа с топливной системой',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Использование специализированного инструмента',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Технические знания',
+    skills: [
+      {
+        name: 'Электроника автомобиля',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Механика двигателя',
+        level: 9,
+      },
+      {
+        name: 'Автодиагностика',
+        level: 9,
       },
     ],
   },
